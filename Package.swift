@@ -23,7 +23,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "YieldLoveAdIntegrationSPM",
-            path: "Binaries/YieldLoveAdIntegrationSPM.xcframework"
+            path: "/YieldLoveAdIntegrationSPM.xcframework"
         )
     ]
 )
