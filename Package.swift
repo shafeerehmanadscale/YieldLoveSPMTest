@@ -10,20 +10,19 @@ let package = Package(
         .library(
             name: "YieldLoveAdIntegrationSPM",
             targets: ["YieldLoveAdIntegrationSPM"]
-        ),
+        )
     ],
     dependencies: [
-        // PromiseKit
-        .package(url: "https://github.com/mxcl/PromiseKit.git", .exact("8.2.0")),
-        // Prebid Mobile
-        .package(url: "https://github.com/prebid/prebid-mobile-ios.git", .exact("3.1.0")),
-        // Google Mobile Ads (12.x)
-        .package(url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git", .upToNextMajor(from: "12.0.0"))
+        // Your dependencies
+        .package(url: "https://github.com/prebid/prebid-mobile-ios.git", from: "3.1.0"),
+        .package(url: "https://github.com/mxcl/PromiseKit.git", from: "8.2.0"),
+        .package(url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git", from: "12.0.0")
     ],
     targets: [
         .binaryTarget(
             name: "YieldLoveAdIntegrationSPM",
-            path: "/YieldLoveAdIntegrationSPM.xcframework"
+            url: "https://github.com/shafeerehmanadscale/YieldLoveSPMTest/releases/download/1.0.0/YieldLoveAdIntegrationSPM.xcframework.zip",
+            checksum: "101a2bcbf7d0e465c6cc0eb4369bda4f69aa1874d81a59840f4c22d8c4fac344"
         )
     ]
 )
