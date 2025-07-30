@@ -21,7 +21,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "YieldLoveAdIntegrationSPM",
-            path: "YieldLoveAdIntegrationSPM.xcframework.zip"
+            url: "https://github.com/shafeerehmanadscale/YieldLoveSPMTest/releases/download/1.0.2/YieldLoveAdIntegrationSPM.xcframework.zip",
+            checksum: "YOUR_CHECKSUM"
         )
     ]
 )
